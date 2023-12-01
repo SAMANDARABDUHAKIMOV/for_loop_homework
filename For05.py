@@ -1,13 +1,16 @@
-def find_max_even(data):
+def main(A,B):
     """
-    Given the list of numbers, Find the maximum even number in the list
-    args:
-        data: list of numbers
-    returns: maximum even number in the list
+    Return the numbers from B to A in the form of a list.
+    Args:
+        A: int
+        B: int
+    Returns:
+        list: return  answer
     """
-    a=[x for x in data if x%2==0]
-    if not a:
-        return 0
-    return max(a)
-print(find_max_even([1, 4, 3, 8, 5]))
-print(find_max_even([7, 6, 3, 4, 9]))
+
+
+    answer =[]
+    for i in range(B,A):
+        answer.append(i)
+    return answer
+print(main(10,5))
