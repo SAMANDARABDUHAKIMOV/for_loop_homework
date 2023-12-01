@@ -1,18 +1,15 @@
-def find_max_index(data):
+def main(k,n):
     """
-    Given the list of numbers, return the index of maximum number in the list
-    args:
-        data: list of numbers
-    returns: index of maximum number in the list
+    Return the numbers from A to B in the form of a list.
+    Args:
+        A: int
+        B: int
+    Returns:
+        list: return  answer
     """
-    i = 0
-    mx = data[0]
-    while i < len(data):
-        x = data[i]
-        if x > mx:
-            mx = x
-        i += 1
+    answer=[]
+    for i in range(n):
+        answer.append(k)
+    return answer 
 
-    return data.index(mx)
-print(find_max_index([1, 2, 3, 4, 5]))
-print(find_max_index([6, 8, 7, 4, 0]))
+print(main(3,5))
